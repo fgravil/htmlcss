@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .nav-header {
+            background-color: aquamarine;
+            padding: 15px 0;
+        }
+
+        .nav-header::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        .nav-header__container {
+            width: 85%;
+            margin: 0 auto;
+        }
+
+        .nav-header__logo {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .nav-header__logo h4 {
+            display: inline-block;
+        }
+
+        nav {
+            float: right;
+        }
+
+        .nav-header__links {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .nav-header__links li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        .nav-header__links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .nav-header__links a:hover {
+            color: #999;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="nav-header">
+        <div class="nav-header__container">
+            <a href="#" class="nav-header__logo">
+                <h4>The Nav</h4>
+            </a>
+            <nav>
+                <ul class="nav-header__links">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+
+</html>
