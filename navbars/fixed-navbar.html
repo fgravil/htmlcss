@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        nav {
+            background: #f1f1f1;
+            position: fixed;
+            height: 80px;
+            overflow: hidden;
+            top: 0;
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        .logo {
+            background: url('img/logo-2.png') no-repeat 50% 50%;
+            background-repeat: no-repeat;
+            width: 100px;
+            height: 60px;
+            background-size: contain;
+            float: left;
+        }
+
+        .btn {
+            display: none;
+            position: absolute;
+            right: 20px;
+        }
+
+        .btn span {
+            display: block;
+            margin: 6px;
+            width: 40px;
+            height: 3px;
+            background: #333;
+        }
+
+        .menu {
+            position: absolute;
+            right: 20px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #333;
+            text-transform: uppercase;
+            margin: 0 10px;
+            font-weight: 700;
+            transition: color 0.3s;
+        }
+
+        header {
+            width: 100%;
+            height: 600px;
+            background: url('img/header-image.jpg') no-repeat 50% 50%;
+            background-size: cover;
+            margin-top: 80px;
+        }
+
+        p {
+            padding: 20px;
+            font-size: 20px;
+            text-align: justify;
+        }
+
+        @media only screen and (max-width: 600px) {
+            nav {
+                overflow: visible;
+            }
+
+            .menu {
+                width: 100%;
+                right: 0;
+                top: 60px;
+                background: #f1f1f1;
+                overflow: hidden;
+                max-height: 0;
+            }
+
+            .menu a {
+                display: block;
+                text-align: center;
+                padding: 10px;
+            }
+
+            .btn {
+                display: block;
+                cursor: pointer;
+            }
+
+            .show {
+                max-height: 500px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo"></div>
+            <a class="btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">About Me</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+        <header>
+
+        </header>
+        <main class="content">
+            <p>
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
+                in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked
+                up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+                going through the cites of the word in classical literature, discovered the undoubtable source.
+            </p>
+            <p>
+                Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
+                (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on
+                the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum,
+                "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            </p>
+            <p>
+                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
+                Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also
+                reproduced in their exact original form, accompanied by English versions from the 1914
+                translation by H. Rackham.
+            </p>
+        </main>
+    </div>
+
+    <script type="text/javascript">
+        const btn = document.querySelector('.btn');
+        const menuClassList = document.querySelector('.menu').classList;
+
+        btn.addEventListener('click', () => {
+            menuClassList.contains('show')
+                ? menuClassList.remove('show')
+                : menuClassList.add('show');
+
+        })
+    </script>
+</body>
+
+</html>
