@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+
+        .services-section {
+            background: url('img/coding.jpeg') no-repeat 50% 50%;
+            background-size: cover;
+            padding: 60px 0;
+
+        }
+
+        .services-section::after {
+            content: "";
+            background: #333;
+        }
+
+        .inner-width {
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+            overflow: hidden;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #ddd;
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+
+        .border {
+            width: 160px;
+            height: 2px;
+            background: #82ccdd;
+            margin: 40px auto;
+        }
+
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .service-box {
+            max-width: 33.33%;
+            padding: 10px;
+            text-align: center;
+            color: #ddd;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="services-section">
+        <div class="inner-width">
+            <h1 class="section-title">Our Services</h1>
+            <div class="border"></div>
+            <div class="services-container">
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="service-title">Web Designs</div>
+                    <div class="service-desc">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias beatae molestiae asperiores
+                        voluptatem quam.
+                    </div>
+                </div>
+
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="service-title">Web Development</div>
+                    <div class="service-desc">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias beatae molestiae asperiores
+                        voluptatem quam.
+                    </div>
+                </div>
+
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="fas fa-brush"></i>
+                    </div>
+                    <div class="service-title">Responsive Designs</div>
+                    <div class="service-desc">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias beatae molestiae asperiores
+                        voluptatem quam.
+                    </div>
+                </div>
+
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="fas fa-object-ungroup"></i>
+                    </div>
+                    <div class="service-title">Edit Sections</div>
+                    <div class="service-desc">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias beatae molestiae asperiores
+                        voluptatem quam.
+                    </div>
+                </div>
+
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="service-title">Databases</div>
+                    <div class="service-desc">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias beatae molestiae asperiores
+                        voluptatem quam.
+                    </div>
+                </div>
+
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="fab fa-android"></i>
+                    </div>
+                    <div class="service-title">Web Designs</div>
+                    <div class="service-desc">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias beatae molestiae asperiores
+                        voluptatem quam.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
