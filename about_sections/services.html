@@ -18,23 +18,32 @@
         }
 
         .services-section {
+            padding: 60px 0;
             background: url('img/coding.jpeg') no-repeat 50% 50%;
             background-size: cover;
-            padding: 60px 0;
 
         }
 
         .services-section::after {
             content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: .6;
             background: #333;
+            z-index: 0;
         }
 
         .inner-width {
+            position: relative;
             width: 100%;
             max-width: 1200px;
             margin: auto;
             padding: 0 20px;
             overflow: hidden;
+            z-index: 1;
         }
 
         .section-title {
@@ -63,6 +72,49 @@
             text-align: center;
             color: #ddd;
             cursor: pointer;
+        }
+
+        .service-icon {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            border: 3px solid #82ccdd;
+            color:#82ccdd;
+            transform: rotate(45deg);
+            margin-bottom: 30px;
+            margin-top: 16px;
+            transition: 0.3s linear;
+        }
+
+        .service-icon i {
+            line-height: 70px;
+            transform: rotate(-45deg);
+            font-size: 26px;
+        }
+
+        .service-box:hover .service-icon{
+            background: #82ccdd;
+            color: #ddd;
+        }
+        .service-title{
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        .service-desc {
+            font-size: 14px;
+        }
+
+        @media screen and (max-width: 960px) {
+            .service-box {
+                max-width: 45%;
+            }
+        }
+
+        @media screen and (max-width: 960px) {
+            .service-box {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
